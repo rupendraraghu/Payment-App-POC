@@ -1,0 +1,586 @@
+{
+	"info": {
+		"_postman_id": "38a5eff4-cf17-4112-ab16-bb2ba1aa399d",
+		"name": "Admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/secure/auth/admin-management/admin/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"admin",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Account For User",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/secure/auth/admin-management/createAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"createAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Test",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8003/secure/auth/admin-management/admin/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8003",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"admin",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/secure/auth/admin-management/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account By Account Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/secure/auth/admin-management/getAccountByAccountId/{accountId}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"getAccountByAccountId",
+						"{accountId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Accounts for User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/secure/auth/admin-management/getAllAccounts/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"getAllAccounts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account By Account Number",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/secure/auth/admin-management/getAccountByAccountNumber/10002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"getAccountByAccountNumber",
+						"10002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deposit1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/secure/auth/admin-management/depositAccount/userId/1/accountNumber/10002/amount/350",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"depositAccount",
+						"userId",
+						"1",
+						"accountNumber",
+						"10002",
+						"amount",
+						"350"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Accounts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/secure/auth/admin-management/getAllAccounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"getAllAccounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer By Email Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/secure/auth/admin-management/getCustomerByEmail/{email}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"getCustomerByEmail",
+						"{email}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer By Phone Number",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "rupendraraghu@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4,\r\n    \"username\" : \"Ayush Raghu\",\r\n    \"password\" :\"password\",\r\n    \"email\" : \"ayush@gmail.com\",\r\n    \"phoneNumber\" : \"+918109358283\",\r\n    \"enabled\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/secure/auth/admin-management/getCustomerByPhoneNumber/+918109358283",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"getCustomerByPhoneNumber",
+						"+918109358283"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Withdraw",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/secure/auth/admin-management/withdrawAccount/10006/amount/250",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"withdrawAccount",
+						"10006",
+						"amount",
+						"250"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": 10001,\r\n    \"customerName\": \"Ayush\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/secure/auth/admin-management/deleteAccountById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"secure",
+						"auth",
+						"admin-management",
+						"deleteAccountById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
